@@ -43,8 +43,14 @@ The app successfully compiled and launched locally at http://localhost:4200/.
 
 
 4. Basic CLI Commands Discovered
+
+   
 ng new <app-name> - Generates a new workspace and initial application.
+
+
 ng serve - Builds the app and serves it locally, rebuilding on any file changes.
+
+
 ng help - Lists available commands and short descriptions.
 
 
