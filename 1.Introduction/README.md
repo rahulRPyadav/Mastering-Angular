@@ -16,13 +16,28 @@ I successfully set up my development environment by following these steps:
   npm install -g @angular/cli@16
 
 ### 3. Creating and Running My First App
+
 I learned the fundamental CLI commands to scaffold and launch an Angular application:
+
+
 Create a new project:
+
+
   ```ng new my-first-angular-app```
+
+  
 Navigate into the project folder:
+
+
    ```cd my-first-angular-app```
+
+   
 Run the development server:
+
+
    ```ng serve```
+
+   
 
 The app successfully compiled and launched locally at http://localhost:4200/.
 
