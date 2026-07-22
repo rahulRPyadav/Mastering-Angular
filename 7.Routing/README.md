@@ -67,6 +67,6 @@ us ke baad `app.component.html` me <router-outlet> ke inside vo routing aa jayeg
 
 router-outlet ke upper or niche ham jo bhi component use krege vo static rahege.
 
-or jin jin hi hamne routing ki hai vo router-outlet me change honge
+or jin jin ki hamne routing ki hai vo router-outlet me change honge
 
 
