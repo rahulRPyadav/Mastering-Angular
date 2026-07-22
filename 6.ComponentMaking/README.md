@@ -27,7 +27,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
+
+
 #Here are step by step process of making Component in Angular 16 Using Terminal 
+
+
 **Step 1**
 
 
@@ -45,18 +49,36 @@ after this a Component made inside app folder
 
 
 # Here is Manual steps to create Component
+
+
 **Step 1**
+
+
 Create An Angular Project
+
+
 **step 2**
+
+
 Now open *app* folder and create a new folder in *app*
+
+
 **step 3**
+
+
 Now in that folder create this files: 
+
+
 -<ComponentName>.component.html
 -<ComponentName>.component.css
 -<ComponentName>.compoenet.ts
 
 **Step 4**
+
+
 Now inside the <ComponentName>.component.ts write this:
+
+
 `import { Component } from "@angular/core";
 @Component({
     selector:"app-<ComponentName>",
@@ -67,20 +89,38 @@ export class <ComponentName>Component{
     myname:string="..."
 }`
 
+
+
 **Step 5**
+
+
 Now in app.module.ts
+
+
 `import { <ComponentName>Component } from './<ComponentName>/<ComponentName.component';`
+
+
 and also do this
+
+
 `@NgModule({
   declarations: [
     AppComponent,
     <ComponentName>Component,
   ]`
 
+
+
 **step 6**
+
+
 Now in app.component.html:
+
+
 use that component like this
 `app-<ComponentName>`
+
+
 
 All done
 
