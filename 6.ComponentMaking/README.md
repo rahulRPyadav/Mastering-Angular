@@ -29,10 +29,20 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 #Here are step by step process of making Component in Angular 16 Using Terminal 
 **Step 1**
+
+
 First all of Create An Angular  Project
+
+
 **Step 2**
+
+
 Now open Terminal in VS Code and Type `ng g c <ComponentName>`
+
+
 after this a Component made inside app folder
+
+
 
 # Here is Manual steps to create Component
 **Step 1**
