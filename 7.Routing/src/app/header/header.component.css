@@ -1,0 +1,165 @@
+.custom-navbar {
+  background-color: #198754;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.brand-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #56f37d;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 80px;
+  padding: 5px 29px ;
+  border-radius: 20px;
+}
+
+.navbar-toggler {
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.toggler-icon-bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.nav-links-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #e2f0d9;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.menu-link:hover, .menu-link.active {
+  color: #ffffff;
+}
+
+.header-btn {
+  background-color: #ffffff;
+  color: #198754;
+  border: 2px solid transparent;
+  padding: 8px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .navbar-wrapper {
+    flex-wrap: wrap;
+  }
+  
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .nav-links-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0 10px 0;
+  }
+
+  .nav-btn-wrapper {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+/* --- Auto-Animating Logo Base --- */
+.custom-bouncing-logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  position: relative;
+  
+  /* Infinite Animations: Ek bounce karega, dusra text ko soft glow dega */
+  animation: infiniteBounce 3s ease-in-out infinite, softGlow 4s ease-in-out infinite alternate;
+}
+
+.logo-highlight {
+  color: #a7f3d0;
+}
+
+/* --- 1. Smooth Bouncing Animation (Loop) --- */
+@keyframes infiniteBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* Bina hover ke itna upar automatic bounce hoga */
+  }
+}
+
+/* --- 2. Elegant Soft Glow Animation (Bina Hover Ke Color Shift) --- */
+@keyframes softGlow {
+  0% {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    text-shadow: 0 5px 15px rgba(167, 243, 208, 0.4); /* Greenish glow effect */
+  }
+}
+
+/* --- Bottom Moving Indicator Line --- */
+.custom-bouncing-logo::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ffffff, #a7f3d0);
+  border-radius: 2px;
+  transform: scaleX(0.7); /* Thoda chota dikhega default me */
+  animation: linePulse 3s ease-in-out infinite;
+}
+
+/* --- 3. Line Elastic Effect --- */
+@keyframes linePulse {
+  0%, 100% {
+    transform: scaleX(0.6);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scaleX(1); /* Jab logo upar bounce hoga toh line stretch hogi */
+    opacity: 1;
+  }
+}

@@ -1,0 +1,129 @@
+.gallery-page-wrapper {
+  background-color: #f8fafc;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-hero {
+  padding: 80px 0 40px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.gallery-badge {
+  background-color: #e6f4ea;
+  color: #198754;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.gallery-heading {
+  font-size: 44px;
+  font-weight: 800;
+  color: #1e293b;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.2;
+}
+
+.highlight-text {
+  color: #198754;
+}
+
+.gallery-lead {
+  font-size: 18px;
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.gallery-grid-block {
+  padding: 60px 0 80px 0;
+}
+
+.gallery-item-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.gallery-img-box {
+  position: relative;
+  height: 280px;
+  width: 100%;
+  background-color: #cbd5e1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(25, 135, 84, 0.9), rgba(15, 23, 42, 0.4));
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  transition: opacity 0.4s ease;
+}
+
+.overlay-content h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.overlay-content span {
+  color: #e2f0d9;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  transform: translateY(20px);
+  transition: transform 0.4s ease 0.1s;
+}
+
+.gallery-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item-card:hover .gallery-img-box img {
+  transform: scale(1.1);
+}
+
+.gallery-item-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-item-card:hover .overlay-content h4,
+.gallery-item-card:hover .overlay-content span {
+  transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+  .gallery-heading {
+    font-size: 34px;
+  }
+  .gallery-img-box {
+    height: 240px;
+  }
+}
