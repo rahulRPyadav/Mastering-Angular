@@ -79,13 +79,17 @@ Now in that folder create this files:
 Now inside the <ComponentName>.component.ts write this:
 
 
-`import { Component } from "@angular/core";
-@Component({
+`import { Component } from "@angular/core";`
+
+
+`@Component({
     selector:"app-<ComponentName>",
     templateUrl:"./<ComponentName>.component.html",
     styleUrls:["./<ComponentName>.component.css"]
-})
-export class <ComponentName>Component{
+})`
+
+
+`export class <ComponentName>Component{
     myname:string="..."
 }`
 
