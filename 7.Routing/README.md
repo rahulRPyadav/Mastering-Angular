@@ -1,4 +1,4 @@
-*Angular 16 me Routing karna muje bahut easy laga jo main yaha save kr raha hu tabhi kbhi bhul jau to phir quickly revise kr saku*
+*Angular 16 me Routing karna muje bahut easy laga jo main yaha save kr raha hu taki kbhi bhul jau to phir quickly revise kr saku*
 
 
 
